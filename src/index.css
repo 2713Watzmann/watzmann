@@ -1,0 +1,19 @@
+@import "./style/hero.css";
+@import "./style//navbar.css";
+@import "./style/content.css";
+@import "./style/footer.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+  background: #081f2e;
+  color: rgb(176, 176, 176);
+  font-size: 1em;
+}

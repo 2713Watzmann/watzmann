@@ -1,0 +1,43 @@
+main {
+  padding: 48px 4% 48px 4%;
+}
+
+section {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  min-height: 700px;
+  padding: 24px;
+  margin: 56px 0px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content {
+  padding: 16px;
+  flex: 0.4;
+
+  > div {
+    min-width: 100%;
+    min-height: 500px;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-radius: 10px;
+  }
+}
+
+.content_border {
+  border: 2px solid #d7b46a;
+  border-radius: 15px;
+}
+
+section:first-child,
+section:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-size: 1.25em;
+}
