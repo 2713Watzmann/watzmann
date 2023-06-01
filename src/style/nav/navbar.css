@@ -52,8 +52,10 @@ nav > ul {
   border-radius: var(--border-radius-small);
 
   > li {
-    color: var(--main-bg-color);
-    font-size: var(--font-size-large);
-    font-weight: bold;
+    > a {
+      color: var(--main-bg-color);
+      font-size: var(--font-size-large);
+      font-weight: bold;
+    }
   }
 }
