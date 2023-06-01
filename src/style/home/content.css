@@ -3,16 +3,18 @@ main {
 }
 
 section {
-  display: flex;
   width: 100%;
-  text-align: center;
-  min-height: 700px;
-  padding: 24px;
-  margin: 56px 0px;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  min-height: 700px;
+  padding: 24px;
+  margin: 56px 0px;
+  text-align: center;
+  font-size: var(--font-size-regular);
+  color: var(--font-color-default);
 }
 
 .content {
@@ -22,14 +24,14 @@ section {
   > div {
     min-width: 100%;
     min-height: 500px;
-    background-color: rgba(128, 128, 128, 0.2);
-    border-radius: 10px;
+    background-color: var(--content-bg-color);
+    border-radius: var(--border-radius-medium);
   }
 }
 
 .content_border {
-  border: 2px solid #d7b46a;
-  border-radius: 15px;
+  border: var(--border-color-yellow);
+  border-radius: var(--border-radius-large);
 }
 
 section:first-child,
@@ -39,5 +41,4 @@ section:last-child {
   align-items: center;
   justify-content: center;
   border: none;
-  font-size: 1.25em;
 }

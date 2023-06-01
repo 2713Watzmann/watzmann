@@ -1,7 +1,8 @@
-@import "./style/hero.css";
-@import "./style//navbar.css";
-@import "./style/content.css";
-@import "./style/footer.css";
+@import "./style/home/hero.css";
+@import "./style/home/content.css";
+@import "./style/nav/navbar.css";
+@import "./style/footer/footer.css";
+@import "./style/vars.css";
 
 * {
   box-sizing: border-box;
@@ -13,7 +14,5 @@ html {
 
 body {
   margin: 0px;
-  background: #081f2e;
-  color: rgb(176, 176, 176);
-  font-size: 1em;
+  background: var(--main-bg-color);
 }

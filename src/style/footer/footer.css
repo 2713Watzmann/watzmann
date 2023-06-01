@@ -1,12 +1,12 @@
 footer {
-  display: flex;
   width: 100%;
   min-height: 126px;
+  display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 24px 2% 24px 2%;
-  box-shadow: -2px 0px 16px rgba(128, 128, 128, 0.3);
+  box-shadow: -2px 0px 16px var(--box-shadow-color);
 }
 
 footer > ul {
@@ -17,9 +17,17 @@ footer > ul {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  flex-grow: 0.3;
 
   > li {
     margin: 6px 0px;
+
+    > span {
+      font-size: var(--font-size-regular);
+      color: var(--font-color-default);
+    }
   }
+}
+
+footer > #logo {
+  height: 90px;
 }
