@@ -1,1 +1,4 @@
-export { registerParallaxScrollEvent } from "./hero.js";
+export {
+  registerParallaxScrollEvent,
+  replaceParallaxScrollImages,
+} from "./hero.js";

@@ -1,0 +1,21 @@
+@import "./style/nav/navbar.css";
+@import "./style/footer/footer.css";
+@import "./style/vars.css";
+@import "./style/contact/content.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+  background: var(--main-bg-color);
+}
+
+a {
+  text-decoration: none;
+}

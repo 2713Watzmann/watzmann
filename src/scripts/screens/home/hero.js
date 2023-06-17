@@ -1,12 +1,12 @@
 // parallax scroll event for hero on landing page
 
-const sky = document.getElementById("sky");
-const mountain = document.getElementById("mountain");
-const hills = document.getElementById("hills");
-const trees = document.getElementById("trees");
-const heroTitle = document.getElementById("hero_title");
-
 export const registerParallaxScrollEvent = () => {
+  const sky = document.getElementById("sky");
+  const mountain = document.getElementById("mountain");
+  const hills = document.getElementById("hills");
+  const trees = document.getElementById("trees");
+  const heroTitle = document.getElementById("hero_title");
+
   window.addEventListener("scroll", (e) => {
     const scrollValue = window.scrollY;
 
@@ -19,3 +19,11 @@ export const registerParallaxScrollEvent = () => {
 };
 
 // this should be disabled when is not visible for memory optimization
+
+// remove images and styling and add a single image
+
+export const replaceParallaxScrollImages = () => {
+  const hero = document.getElementsByClassName("hero")[0];
+  hero.innerHTML = `<img src="assets/hero_full.jpg" alt="watzmann_img" /><span id="hero_title">Watzmann</span>
+  `;
+};

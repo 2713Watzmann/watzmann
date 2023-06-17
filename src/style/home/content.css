@@ -15,18 +15,19 @@ section {
   text-align: center;
   font-size: var(--font-size-regular);
   color: var(--font-color-default);
+  background-color: var(--main-bg-color);
 }
 
 .content {
   padding: 16px;
   flex: 0.4;
+}
 
-  > div {
-    min-width: 100%;
-    min-height: 500px;
-    background-color: var(--content-bg-color);
-    border-radius: var(--border-radius-medium);
-  }
+.content > div {
+  min-width: 100%;
+  min-height: 500px;
+  background-color: var(--content-bg-color);
+  border-radius: var(--border-radius-medium);
 }
 
 .content_border {
@@ -41,4 +42,26 @@ section:last-child {
   align-items: center;
   justify-content: center;
   border: none;
+}
+
+section:last-child {
+  margin-bottom: 0px;
+}
+
+section > h1 {
+  color: var(--main-accent-color);
+  font-size: var(--font-size-xlarge);
+}
+
+section > ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+ul > li {
+  margin: 8px 0px;
+}
+
+li > span {
+  font-size: var(--font-size-large);
 }

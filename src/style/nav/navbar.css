@@ -4,7 +4,7 @@ header {
   height: 126px;
   align-items: center;
   justify-content: center;
-  background-color: rgba(8, 32, 48, 0.95);
+  background-color: rgba(8, 31, 46, 0.95);
 }
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
@@ -12,11 +12,6 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + main {
-  padding-top: 174px;
 }
 
 nav {
@@ -50,12 +45,26 @@ nav > ul {
   height: 56px;
   background-color: var(--main-accent-color);
   border-radius: var(--border-radius-small);
+}
 
-  > li {
-    > a {
-      color: var(--main-bg-color);
-      font-size: var(--font-size-large);
-      font-weight: bold;
-    }
+nav > ul > li > a {
+  color: var(--main-bg-color);
+  font-size: var(--font-size-large);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 991.98px) {
+  nav > ul {
+    width: 25%;
+  }
+
+  nav > ul > li {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  nav > ul {
+    display: none;
   }
 }
