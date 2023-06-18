@@ -1,0 +1,11 @@
+/* TEAM */
+Site Developer: Nagy Krisztian
+	LinkedIn: https://www.linkedin.com/in/krisztian-nagy-177419194/
+	From: Kaposvar, Somogy, Hungary
+  Other roles: User Interface Design, User Experience Design (Excluding site logo and media content)
+
+/* SITE */
+	Last update: 2023/06/18
+	Language: English
+	Doctype: HTML5
+	IDE: Visual Studio Code (VSCode)
